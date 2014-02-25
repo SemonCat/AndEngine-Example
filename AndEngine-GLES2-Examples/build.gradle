@@ -1,0 +1,23 @@
+apply plugin: 'android'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile project(':andengine-gles2')
+    compile project(':andengine-gles2-Box2d')
+    compile project(':andengine-gles2-multiplayer')
+    compile project(':andengine-gles2-augmented')
+    compile project(':andengine-gles2-cocosbuilder')
+    compile project(':andengine-gles2-svgtexture')
+    compile project(':andengine-gles2-modplayer')
+    compile project(':andengine-gles2-tmx')
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.1'
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 16
+    }
+}
